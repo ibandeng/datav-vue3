@@ -7,3 +7,6 @@
     </dv-border-box1>
   </div>
 </template>
+<script setup>
+const color = reactive(['red','green'])
+</script>

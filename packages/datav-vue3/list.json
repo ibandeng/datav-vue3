@@ -1,6 +1,13 @@
 [
   {
     "compType": "NoChildren",
+    "compName": "ConfigProvider",
+    "compZhName": "全局配置",
+    "compDesc": "全局配置",
+    "compClassName": "config-provider"
+  },
+  {
+    "compType": "NoChildren",
     "compName": "ConicalColumnChart",
     "compZhName": "锥形柱图",
     "compDesc": "锥形柱图",

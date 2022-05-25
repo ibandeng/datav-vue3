@@ -43,16 +43,21 @@ const props = defineProps({
 })
 const borderBox2 = ref<HTMLElement | null>(null)
 
+const injectColor = inject('color', props.color)
+const _color = computed(() =>
+  props.color.length === 0 ? injectColor : props.color
+)
+
 const state = reactive({
   defaultColor: ['#fff', 'rgba(255, 255, 255, 0.6)'],
   mergedColor: [],
 })
 
 const mergeColor = () => {
-  state.mergedColor = deepMerge(deepClone(state.defaultColor, true), props.color || [])
+  state.mergedColor = deepMerge(deepClone(state.defaultColor, true), _color.value || [])
 }
 
-watch(() => props.color, () => {
+watch(() => _color.value, () => {
   mergeColor()
 })
 

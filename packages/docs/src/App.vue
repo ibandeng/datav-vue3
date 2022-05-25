@@ -10,14 +10,13 @@
       <div flex="~" justify-end py1 pr25>
         <Footer />
       </div>
-      <router-view />
+        <router-view />
     </main>
   </div>
 </template>
 
 <script lang="ts" setup>
 import ComponentList from 'packages/datav-vue3/list.json'
-
 </script>
 
 <style lang="less">

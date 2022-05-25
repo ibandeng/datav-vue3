@@ -13,6 +13,11 @@ const routes = [{
   name: 'Index',
   component: () => import('./pages/README.md'),
 }, {
+  title: '全局配置',
+  name: 'ConfigProvider',
+  path: '/components/ConfigProvider',
+  component: () => import('@/src/pages/ConfigProvider/docs/README.md'),
+}, {
   title: '锥形柱图',
   name: 'ConicalColumnChart',
   path: '/components/ConicalColumnChart',

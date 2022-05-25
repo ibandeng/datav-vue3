@@ -73,7 +73,6 @@ pre {
 }
 
 .mykit-preview {
-  border: 4px;
   border: 1px dashed #e7e7e7;
   padding: 10px;
   border-bottom: 1px dashed #e7e7e7;
